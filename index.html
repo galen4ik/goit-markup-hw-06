@@ -60,10 +60,49 @@
 
                         <div class="backdrop is-hidden" data-modal>
                             <div class="modal">
-                                <button class="btn-close" data-modal-close></button>
-                            </div>
-                        </div>
+                                
+                                <!-- Форма -->
 
+               <h1 class="form-title">Оставьте свои данные, мы вам перезвоним</h1>
+                <form class="form" action="">
+                    
+                        <ul class="list form-list">
+                            <li class=" item form">
+                                <label class="form-field" for="name">
+                                    <span class="field-title">Имя</span>                
+                            <input class="input" type="text" name="name">
+                                <svg class="icon-form" width="12" height="12">
+                                    <use href="./img/sprite.svg#icon-modal-name"></use>
+                                </svg>         
+                        </label>
+                    </li>
+                                                                            
+                            <li class="form-item">
+                                <label class="form-field" for="tel">Телефон
+
+                            <input class="input" type="text" name="tel">
+                        </label></li>
+                                                                                                    
+                            <li class="form-item">
+                                <label for="mail">Почта
+                            <input class="input" type="email" name="mail">
+                        </label></li>
+                        </ul>             
+                
+                    <div class="text-area">
+                            <label class="form-field" for="comment">Комментарий
+                        <textarea class="textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст">            
+                        </textarea></label>
+                    </div>
+                    
+                    <input type="checkbox" name="licence">
+                    <label for="">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+                    <button class="btn-submit" type="submit">Отправить</button>
+            </form>
+
+                <button class="btn-close" data-modal-close></button>
+            </div>
+        </div>
             </div>                          
         </section>
 
@@ -435,7 +474,7 @@
        </div>
 
        <div class="subscribe">
-           <p class="subs-title">Подпишитесь на рассылку</p>
+           <label class="subs-title">Подпишитесь на рассылку</label>
 
            <input class="input-subs" type="email" name="E-mail" placeholder="E-mail">
 
