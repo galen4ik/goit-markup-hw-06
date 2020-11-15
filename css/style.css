@@ -304,9 +304,6 @@ img {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
-  background-image: url(../img/modal-btnclose.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .btn-close:hover,
@@ -314,7 +311,17 @@ img {
   color: var(--blue);
 }
 
+.icon-close {
+  display: block;
+  width: 18px;
+  height: 18px;
+  fill: black;
+}
+
 /* Форма */
+.form {
+  text-align: center;
+}
 
 .form-title {
   margin-bottom: 30px;
@@ -326,12 +333,12 @@ img {
   color: var(--primary-text-color);
 }
 
-.form-item:not(last-child) {
-  margin-bottom: 28px;
+.form-list {
+  margin-bottom: 10px;
 }
 
-.form-field {
-  position: relative;
+.form-item {
+  margin-bottom: 10px;
 }
 
 .input {
@@ -342,6 +349,12 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+}
+
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .field-title {
@@ -358,6 +371,8 @@ img {
   position: absolute;
   top: 50%;
   left: 19px;
+  width: 18px;
+  height: 18px;
 
   display: inline-block;
   fill: var(--primary-text-color);
@@ -365,6 +380,7 @@ img {
 }
 
 .textarea {
+  margin-bottom: 20px;
   width: 100%;
   height: 120px;
   padding: 12px 16px;
@@ -372,22 +388,38 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
+.checkbox-label {
+  margin-bottom: 30px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color-p);
+}
+
+.checkbox-link {
+  color: var(--blue);
+}
+
 .btn-submit {
   display: inline-block;
-  min-width: 200px;
+  max-width: 200px;
   height: 50px;
   padding: 10px 55px;
+  border: 0;
 
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
 
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--white);
-  background-color: var(--blue);
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 /* details */

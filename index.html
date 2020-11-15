@@ -63,44 +63,63 @@
                                 
                                 <!-- Форма -->
 
+                 <form class="form">
                <h1 class="form-title">Оставьте свои данные, мы вам перезвоним</h1>
-                <form class="form" action="">
-                    
+                                 
                         <ul class="list form-list">
+
                             <li class=" item form">
                                 <label class="form-field" for="name">
                                     <span class="field-title">Имя</span>                
                             <input class="input" type="text" name="name">
-                                <svg class="icon-form" width="12" height="12">
+                                <svg class="icon-form">
                                     <use href="./img/sprite.svg#icon-modal-name"></use>
                                 </svg>         
                         </label>
                     </li>
                                                                             
                             <li class="form-item">
-                                <label class="form-field" for="tel">Телефон
-
-                            <input class="input" type="text" name="tel">
-                        </label></li>
+                                    <label class="form-field" for="tel">
+                                        <span class="field-title">Телефон</span>
+                                        <input class="input" type="tel" name="tel">
+                                        <svg class="icon-form">
+                                            <use href="./img/sprite.svg#icon-modal-tel"></use>
+                                        </svg>
+                                    </label>
+                        </li>
                                                                                                     
                             <li class="form-item">
-                                <label for="mail">Почта
+                                <label class="form-field" for="mail">
+                            <span class="field-title">Почта</span>
                             <input class="input" type="email" name="mail">
-                        </label></li>
+                            <svg class="icon-form">
+                                <use href="./img/sprite.svg#icon-modal-mail"></use>
+                            </svg>
+                        </label>
+                    </li>
                         </ul>             
-                
-                    <div class="text-area">
-                            <label class="form-field" for="comment">Комментарий
+                             
+                            <label class="form-field text-area" for="comment">
+                                <span class="field-title">Комментарий</span>
                         <textarea class="textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст">            
-                        </textarea></label>
-                    </div>
+                        </textarea>
+                    </label>
                     
-                    <input type="checkbox" name="licence">
-                    <label for="">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+                    
+                   <label class="form-field">
+                        <input type="checkbox" name="licence">
+                        <span class="checkbox-label">Соглашаюсь с рассылкой и принимаю <a href="#" class="checkbox-link">Условия
+                                договора</a></span>
+                   </label>
+
                     <button class="btn-submit" type="submit">Отправить</button>
             </form>
 
-                <button class="btn-close" data-modal-close></button>
+                <button class="btn-close" data-modal-close>
+                    <svg class="icon-close" width="18" height="18">
+                        <use href="./img/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
             </div>
         </div>
             </div>                          
