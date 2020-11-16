@@ -883,7 +883,6 @@ img {
 .footer-cont {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
 }
 
 .address-footer {
@@ -990,6 +989,15 @@ img {
   background-color: var(--blue);
 }
 
+.subscribe-form {
+  position: relative;
+}
+
+.subs-div {
+  display: flex;
+  flex-direction: column;
+}
+
 .subs-title {
   margin-bottom: 20px;
 
@@ -999,11 +1007,6 @@ img {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-
-.group {
-  display: flex;
-  justify-content: center;
 }
 
 .input-subscribe {
@@ -1022,6 +1025,10 @@ img {
 }
 
 .btn-subscribe {
+  position: absolute;
+  bottom: 0%;
+  left: 370px;
+
   display: flex;
   align-items: center;
   justify-content: center;
