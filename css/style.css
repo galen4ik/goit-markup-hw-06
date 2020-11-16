@@ -311,7 +311,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-close:hover {
+.btn-close:hover .icon-close {
   fill: var(--blue);
 }
 
@@ -381,17 +381,27 @@ img {
 
   display: block;
   fill: var(--primary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-form:hover + .icon-form {
+  fill: var(--blue);
 }
 
 .textarea {
+  padding: 12px 16px;
   margin-bottom: 20px;
   width: 100%;
   height: 120px;
-  padding: 12px 16px;
+
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.textarea:hover {
+  border-color: var(--blue);
+}
 /* Checkbox */
 
 .checkbox-field {
