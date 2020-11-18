@@ -993,13 +993,14 @@ img {
 }
 
 .subs-div {
-  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
 }
 
 .subs-title {
+  display: inline-block;
+  margin-bottom: 20px;
   color: var(--white);
   font-weight: 700;
   font-size: 14px;
@@ -1028,7 +1029,7 @@ img {
   align-items: center;
   justify-content: center;
   min-width: 200px;
-  /* height: 50px; */
+  height: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: var(--blue);
