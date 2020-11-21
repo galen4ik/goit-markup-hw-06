@@ -1024,6 +1024,10 @@ img {
   border-radius: 4px;
 }
 
+.input-subscribe::placeholder {
+  color: white;
+}
+
 .btn-subscribe {
   display: flex;
   align-items: center;
